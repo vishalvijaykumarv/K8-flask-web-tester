@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Functions Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            margin-top: 30px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Flask Functions Demo</h1>
+        <p>Welcome to the Flask Functions Demo! This application demonstrates various functions implemented using Flask.</p>
+        
+        <h2>Available Functions:</h2>
+        <ul>
+            <li><a href="#sleep">Sleep Function</a> - Sleep for a specified duration.</li>
+            <li><a href="#hello">Hello Function</a> - Greet a person with their name.</li>
+            <li><a href="#calculator">Calculator Function</a> - Perform addition with two numbers.</li>
+            <li><a href="#system-info">System Info Function</a> - Display information about the system.</li>
+        </ul>
+        
+        <h2 id="sleep">Sleep Function</h2>
+        <p>This function accepts a digit as input and sleeps for that many seconds. It then returns the start time and end time of execution.</p>
+        
+        <h2 id="hello">Hello Function</h2>
+        <p>This function greets a person with their name. Replace <code>John</code> in the URL with any name to see the greeting.</p>
+        
+        <h2 id="calculator">Calculator Function</h2>
+        <p>This function performs addition with two numbers provided as input.</p>
+        <p>To use this function, submit a POST request to <code>/calculator</code> with JSON data containing <code>num1</code> and <code>num2</code>.</p>
+        
+        <h2 id="system-info">System Info Function</h2>
+        <p>This function displays information about the system such as the operating system, node name, release, version, and processor.</p>
+        <p>To use this function, send a GET request to <code>/system_info</code>.</p>
+    </div>
+</body>
+</html>
